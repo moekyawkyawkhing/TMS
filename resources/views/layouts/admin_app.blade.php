@@ -72,7 +72,7 @@
 <body class="">
   <!-- start slibebar -->
   <div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="white" data-image="{{asset('img/sidebar-1.jpg')}}">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{asset('img/sidebar-1.jpg')}}">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -80,73 +80,16 @@
     -->
       <div class="logo">
         <a href="{{url('/')}}" class="simple-text logo-normal text-success text-center" target="_blank">
-            <img src="{{asset('images/ghilogo.png')}}" alt="" width="80px" height="80px">
-        </a>
+            <!-- <img src="{{asset('images/ghilogo.png')}}" alt="" width="80px" height="80px"> -->
+            TMS
+          </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <!-- <li class="nav-item {{Request::is('dashboard')}}">
-              <a class="nav-link" href="{{url('dashboard')}}">
-                <i class="material-icons">view_list</i>
-                <p>Dashboard</p>
-              </a>
-          </li> -->
-          <li class="nav-item {{$url === 'course' ? 'active' : ''}}">
-              <a class="nav-link" href="{{url('admin/course')}}">
-                <i class="material-icons">view_list</i>
-                <p>Course</p>
-              </a>
-          </li>
-          <li class="nav-item {{$url === 'training' ? 'active' : ''}}">
-              <a class="nav-link" href="{{url('admin/training')}}">
-                <i class="material-icons">view_list</i>
-                <p>Training</p>
-              </a>
-          </li>
-          <li class="nav-item {{$url === 'blog' ? 'active' : ''}}">
-              <a class="nav-link" href="{{url('admin/blog')}}">
-                <i class="material-icons">view_list</i>
-                <p>Blog</p>
-              </a>
-          </li>
-          <li class="nav-item {{$url === 'student' ? 'active' : ''}}">
-              <a class="nav-link" href="{{url('admin/student')}}">
-                <i class="material-icons">view_list</i>
-                <p>Student</p>
-              </a>
-          </li>
-          <li class="dropdown nav-item {{$url === 'trainer' ? 'active' :''}}">
-            <a class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="material-icons">library_books</i>
-              <p>Trainers &nbsp;&nbsp;&nbsp;<img src="{{asset('images/drop_down.png')}}"></p>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="nav-link" href="{{url('admin/trainer/add')}}">Add Trainers</a>
-              <a class="nav-link" href="{{url('admin/trainer/show')}}">Show Trainers</a>
-            </div>
-          </li>
-          <li class="nav-item {{$url === 'project' ? 'active' :''}}">
-            <a class="nav-link" href="{{url('admin/project')}}">
+          <li class="nav-item {{$url === 'user' ? 'active' :''}}">
+            <a class="nav-link" href="{{url('admin/user')}}">
               <i class="material-icons">view_list</i>
-              <p>Project</p>
-            </a>
-          </li>
-          <li class="nav-item {{$url === 'product' ? 'active' :''}}">
-            <a class="nav-link" href="{{url('admin/product')}}">
-              <i class="material-icons">view_list</i>
-              <p>Product</p>
-            </a>
-          </li>
-          <li class="nav-item {{$url === 'client' ? 'active' :''}}">
-            <a class="nav-link" href="{{url('admin/client')}}">
-              <i class="material-icons">view_list</i>
-              <p>Client</p>
-            </a>
-          </li>
-          <li class="nav-item {{$url === 'contact' ? 'active' :''}}">
-            <a class="nav-link" href="{{url('admin/user-contact-us-data')}}">
-              <i class="material-icons">view_list</i>
-              <p>Contact</p>
+              <p>User</p>
             </a>
           </li>
           <li class="nav-item {{$url === 'site_profile' ? 'active' :''}}">
@@ -155,17 +98,6 @@
               <p>Site Profile</p>
             </a>
           </li>
-          <li class="dropdown nav-item {{$url === 'recycle-bin' ? 'active' :''}}">
-            <a class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="material-icons">library_books</i>
-              <p>Recycle Bin &nbsp;&nbsp;&nbsp;<img src="{{asset('images/drop_down.png')}}"></p>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="nav-link" href="{{url('admin/student/recycle-bin')}}">Student</a>
-              <a class="nav-link" href="{{url('admin/course/recycle-bin')}}">Course</a>
-            </div>
-          </li>
-
           <li class="nav-item {{Request::is('logout') ? 'active' :''}}">
             <a class="nav-link" href="{{url('logout')}}">
               <i class="material-icons">logout</i>
