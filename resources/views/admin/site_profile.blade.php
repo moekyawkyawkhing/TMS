@@ -13,7 +13,7 @@
             </div>
       <div class="row m-3">
         <div class="col-md-5">
-          <img src="{{asset('images/setting.png')}}" style="width:350px;height:350px;position:center" alt="">
+          <img src="{{asset('images/setting.jpg')}}" style="width:100%;height:350px;position:center" alt="">
         </div>
         <div class="col-md-7">
           <!-- start company profile form -->

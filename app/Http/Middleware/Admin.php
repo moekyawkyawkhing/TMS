@@ -20,10 +20,10 @@ class Admin
             if(Auth::user()->type == 'admin'){
                 return $next($request);
             }else{
-                return redirect()->back();
+                return redirect('/');
             }
         }else{
-            return redirect()->back();
+            return redirect('/');
         }
     }
 }
